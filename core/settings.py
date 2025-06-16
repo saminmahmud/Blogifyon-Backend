@@ -58,6 +58,7 @@ if DEBUG:
     INSTALLED_APPS.append("whitenoise.runserver_nostatic")
 
 CORS_ORIGIN_ALLOW_ALL = True
+CSRF_TRUSTED_ORIGINS = ['https://blogifyon-backend-fghv.onrender.com', 'https://blogifyon.vercel.app/', 'https://*.127.0.0.1','http://127.0.0.1',]
 
 AUTH_USER_MODEL = 'user_account.User'
 
@@ -212,10 +213,10 @@ EMAIL_HOST_PASSWORD = config("EMAIL_PASSWORD")
 DATA_SITE_KEY= config("DATA_SITE_KEY")
 RECAPTCHA_SECRET_KEY = config("RECAPTCHA_SECRET_KEY")
 
-# Frontend URL 
-FRONTEND_URL = "http://localhost:5173"
+# FRONTEND_URL = "http://localhost:5173"
+FRONTEND_URL = "https://blogifyon.vercel.app"
 
-# BACKEND_URL
-BACKEND_URL = "http://127.0.0.1:8000"
+# BACKEND_URL = "http://127.0.0.1:8000"
+BACKEND_URL = "https://blogifyon-backend-fghv.onrender.com"
 
 
