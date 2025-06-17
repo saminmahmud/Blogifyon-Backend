@@ -58,7 +58,7 @@ if DEBUG:
     INSTALLED_APPS.append("whitenoise.runserver_nostatic")
 
 CORS_ORIGIN_ALLOW_ALL = True
-CSRF_TRUSTED_ORIGINS = ['https://blogifyon-backend-fghv.onrender.com', 'https://blogifyon.vercel.app/', 'https://*.127.0.0.1','http://127.0.0.1',]
+CSRF_TRUSTED_ORIGINS = ['https://blogifyon-backend-fghv.onrender.com', 'http://blogifyon-backend-fghv.onrender.com', 'https://blogifyon.vercel.app/', 'https://*.127.0.0.1','http://127.0.0.1',]
 
 AUTH_USER_MODEL = 'user_account.User'
 
